@@ -13,3 +13,51 @@
 // Enter height in inches: 70
 // BMI is 20.95
 // Normal
+
+#include<iostream>
+using namespace std;
+
+int main(){
+double weight;
+cout<<"Enter weight in pounds ";
+cin>>weight;
+double height;
+cout<<"Enter height in inches ";
+cin>>height;
+double square=height*height;
+
+double formula= (weight/square);
+cout<<"The BMI is"<<formula<<endl;
+
+if(formula<18.5){
+cout<<"underweight";
+}
+else if(formula<24.9){
+cout<<"Normal";
+
+}
+ else if (formula<29.9){
+    cout<<"overweight";
+
+}
+else{
+
+cout<<"obese";
+return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
